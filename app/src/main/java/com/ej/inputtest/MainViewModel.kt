@@ -12,12 +12,14 @@ class MainViewModel : ViewModel() {
     init {
         setInputStatus(MainViewModel.InputStatus.Input4())
     }
+    @JvmName("setInputStatus1")
     fun setInputStatus(inputStatus: MainViewModel.InputStatus) {
+        this.inputStatus = inputStatus
         viewModelScope.launch {
             _inputEventFlow.emit(inputStatus)
         }
     }
-
+    var inputStatus : MainViewModel.InputStatus = MainViewModel.InputStatus.Input4()
     private var _inputEventFlow = MutableEventFlow<MainViewModel.InputStatus>()
     val inputEvent = _inputEventFlow.asEventFlow()
     

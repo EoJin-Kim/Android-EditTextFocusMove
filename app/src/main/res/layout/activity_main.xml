@@ -17,7 +17,7 @@
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:fillViewport="true"
-            app:layout_constraintBottom_toTopOf="@+id/textView"
+            app:layout_constraintBottom_toTopOf="@+id/compelete_btn"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
@@ -33,27 +33,30 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:inputType="textPersonName"
                     android:imeOptions="actionDone"
-                    android:text="Name" />
+                    android:inputType="textPersonName"
+                    android:text="Name"
+                    android:visibility="gone" />
 
                 <EditText
                     android:id="@+id/input2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:inputType="textPersonName"
                     android:imeOptions="actionDone"
-                    android:text="Name" />
+                    android:inputType="textPersonName"
+                    android:text="Name"
+                    android:visibility="gone" />
 
                 <EditText
                     android:id="@+id/input3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:inputType="textPersonName"
                     android:imeOptions="actionDone"
-                    android:text="Name" />
+                    android:inputType="textPersonName"
+                    android:text="Name"
+                    android:visibility="gone" />
 
                 <EditText
                     android:id="@+id/input4"
@@ -68,11 +71,12 @@
         </androidx.core.widget.NestedScrollView>
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/compelete_btn"
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:background="@color/purple_200"
-            android:text="Hello World!"
+            android:gravity="center"
+            android:text="완료"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
